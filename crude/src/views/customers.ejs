@@ -1,0 +1,66 @@
+<%- include('partials/_header'); -%>
+
+<h1 class="ml-2">
+  Alumnos
+</h1>
+<div class="container">
+<div class="row mt-5">
+    <div class="col-md-7">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Curso</th>
+                    <th>Tipo</th>
+                    <th>Fecha de Registro</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% if (data) { %>
+                    <% for (var i = 0; i < data.length; i++) { %>
+                        <tr>
+                            <td><%= (i + 1) %></td>
+                            <td><%= data[i].nombre_alumno %></td>
+                            <td><%= data[i].email_alumno %></td>
+                            <td><%= data[i].curso_alumno %></td>
+                            <td><%= data[i].tipo %></td>
+                            <td><%= new Date(data[i].fecha_registro).toLocaleString() %></td>
+                            <td>
+                                <a href="/delete/<%= data[i].id %>" class="btn btn-danger">Eliminar</a>
+                                <a href="/update/<%= data[i].id %>" class="btn btn-info">Actualizar</a>
+                            </td>
+                        </tr>
+                    <% } %>
+                <% } %>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-5">
+        <div class="card">
+            <div class="card-body">
+                <form action="/add" method="post">
+                    <div class="form-group">
+                        <input type="text" name="nombre_alumno" placeholder="Nombre" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email_alumno" placeholder="Email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="curso_alumno" placeholder="Curso" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="tipo" placeholder="Tipo" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Guardar Estudiante
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<%- include('partials/_footer'); -%>
