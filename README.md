@@ -32,7 +32,7 @@ Creación del archivo db.js para conectar a la base de datos y archivo .env para
 Archivo .env:
   ```
   PORT=3000
-  DB_MONGO=url_mongo
+  
   ```
   
 ### Parte III
@@ -45,4 +45,4 @@ Archivo .env:
   Separación en un controlador de las funciones de las rutas.
   
 ## :books: Documentación de algunas librerías usadas
-[Mongoose](https://mongoosejs.com/docs/guide.html) :leaves: [Express](https://expressjs.com/es/4x/api.html) :leaves: [Nodemon](https://www.npmjs.com/package/nodemon)
+:leaves: [Express](https://expressjs.com/es/4x/api.html) :leaves: [Nodemon](https://www.npmjs.com/package/nodemon)
