@@ -4,6 +4,7 @@
   "description": "A CRUD (Create, Read, Update, Delete) application developed using Node.js and MySQL, showcasing database management and API development skills.",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "dev": "nodemon src/app.js"
   },
   "keywords": [],

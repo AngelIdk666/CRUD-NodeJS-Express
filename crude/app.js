@@ -9,8 +9,8 @@ require('dotenv').config();
 // To get the database password from the .env file
 const PASS = process.env.DATABASE_PASSWORD;
 
-// Importing routes
-const customerRoutes = require('./routes/customer');
+// Importing routes from the new location
+const customerRoutes = require('./src/routes/customer');
 
 // settings
 app.set('port', process.env.PORT || 3000);
@@ -39,4 +39,3 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor en ejecución http://127.0.0.1:${PORT}`);
 });
-
