@@ -46,3 +46,21 @@ Archivo .env:
   
 ## :books: Documentación de algunas librerías usadas
 :leaves: [Express](https://expressjs.com/es/4x/api.html) :leaves: [Nodemon](https://www.npmjs.com/package/nodemon)
+
+## APARTADO DE JENKINS
+  Ejecución 
+  ![Ejecución](/crude/imgs/ejecusion.jpeg "Ejecucion")
+
+  Contenedores
+  ![Contenedores Dockers](/crude/imgs/contenedores.jpeg "Contenedores Dockers")
+
+  Configuracion para el Testeo desde Github
+  ![Config Testeo](/crude/imgs/configuracion_para_testeo.jpeg "Config Testeo")
+
+  Guardando el Script
+  ![Scrip Guardado](/crude/imgs/scrip_guardado.jpeg "Scrip Guardado")
+
+  Ejecucion de consola remota
+  ![Ejecucion Remota](/crude/imgs/ejecucion_consola_remota.jpeg "Ejecucion Remota")
+
+
